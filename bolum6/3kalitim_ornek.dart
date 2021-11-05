@@ -13,9 +13,10 @@ class Kisi {
 class Calisan extends Kisi {
   int maas;
 
-  Calisan(String name, int age, this.maas)
-      : super(name,
-            age); //ALT KATMANA ÖZEL OLAN PARAMETRELERDE ONU this METODU İLE KURUCUYA EKLEMEMİZ GEREKLİDİR.
+
+  Calisan(String name, int age,this.maas) : super(name, age);//ALT KATMANA ÖZEL OLAN PARAMETRELERDE ONU this METODU İLE KURUCUYA EKLEMEMİZ GEREKLİDİR.    
+
+  //ALT KATMANA ÖZEL OLAN PARAMETRELERDE ONU this METODU İLE KURUCUYA EKLEMEMİZ GEREKLİDİR.
   @override
   void kendiniTanit() {
     super.kendiniTanit();

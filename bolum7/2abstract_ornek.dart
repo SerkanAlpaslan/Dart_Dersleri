@@ -1,6 +1,7 @@
 void main(List<String> args) {
-  Veritabani db = Oracle();//bu şekilde Üst katmandan oluşturarak yaparsak ORACLE'yi değiştirip örnek olarak FIREBASE yaparsak başka bir şeyi değiştirmek zorunda kalmayız
-  
+  Veritabani db =
+      Oracle(); //bu şekilde Üst katmandan oluşturarak yaparsak ORACLE'yi değiştirip örnek olarak FIREBASE yaparsak başka bir şeyi değiştirmek zorunda kalmayız
+
   db.userDelete();
   userGuncelle(db);
 }
@@ -32,7 +33,6 @@ class Oracle extends Veritabani {
   }
 }
 
-
 class Firebase extends Veritabani {
   @override
   void userDelete() {
@@ -48,5 +48,4 @@ class Firebase extends Veritabani {
   void userUpdate() {
     print("Firabase da güncellendi");
   }
-  
 }
